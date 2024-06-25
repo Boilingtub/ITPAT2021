@@ -1,0 +1,48 @@
+unit uJHB_DB;
+
+interface
+
+uses
+  SysUtils, Classes , ADODB , DB, uJHBEncryptAndDecrypt;
+ const
+ CONNECTIONSTRING = 'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=.\Jan-Hendrik Custom Units\Delphi 2010\uJHBEncryptAndDecrypt\uJHBEncryptDataModules\JHBEncryptDecryptDatabase.mdb; Mode=ReadWrite; Persist Security Info=False';
+type
+  TJHBdataModule = class(TDataModule)
+    procedure OnDBCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+   DB_con : TADOConnection;
+   DB_usrtbl : TADOTable;
+   DB_usrdsrc : TDataSource;
+
+
+  end;
+
+var
+  JHBdataModule: TJHBdataModule;
+
+implementation
+
+{$R *.dfm}
+
+procedure TJHBdataModule.OnDBCreate(Sender: TObject);
+begin
+DB_con := TADOConnection.Create(JHBdatamodule);
+DB_usrtbl := TADOTable.Create(JHBdatamodule);
+DB_usrdsrc := TDataSource.Create(JHBdatamodule);
+
+
+DB_con.ConnectionString := CONNECTIONSTRING;
+DB_con.LoginPrompt := false;
+DB_con.Open;
+
+DB_usrtbl.Connection := DB_con;
+DB_usrTbl.TableName := 'UsersTable';
+DB_usrdsrc.DataSet := DB_usrTbl;
+DB_usrTbl.Open;
+
+end;
+
+end.
+

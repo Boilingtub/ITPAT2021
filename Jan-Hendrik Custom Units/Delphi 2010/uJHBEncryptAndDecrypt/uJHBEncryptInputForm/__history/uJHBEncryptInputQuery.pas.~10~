@@ -1,0 +1,38 @@
+unit uJHBEncryptInputQuery;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, ComCtrls;
+
+type
+  TfrmEncryptInputQuery = class(TForm)
+    Label1: TLabel;
+    lblText: TLabel;
+    RichEdit1: TRichEdit;
+    Button1: TButton;
+    btnContinue: TButton;
+    Button3: TButton;
+    function JHBInputQuery(const Caption , Descriptor: string ; var SVar : string): bool;
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmEncryptInputQuery: TfrmEncryptInputQuery;
+
+implementation
+
+{$R *.dfm}
+
+function TfrmEncryptInputQuery.JHBInputQuery(Caption , Descriptor , SVar : string): bool;
+begin
+  showmessage('initialized');
+end;
+
+
+end.

@@ -1,0 +1,177 @@
+object frmEncryptInputQuery: TfrmEncryptInputQuery
+  Left = 0
+  Top = 0
+  Caption = 'EncryptInputQuery'
+  ClientHeight = 481
+  ClientWidth = 736
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 8
+    Top = 8
+    Width = 240
+    Height = 39
+    Caption = 'Encrypt Input :'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -32
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold, fsUnderline]
+    ParentFont = False
+  end
+  object lblText: TLabel
+    Left = 8
+    Top = 53
+    Width = 49
+    Height = 23
+    Caption = 'Text :'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 267
+    Width = 64
+    Height = 16
+    Caption = 'Password :'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 8
+    Top = 335
+    Width = 98
+    Height = 16
+    Caption = 'Image File Path :'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 120
+    Top = 293
+    Width = 31
+    Height = 13
+    Caption = 'Label4'
+  end
+  object Label5: TLabel
+    Left = 120
+    Top = 361
+    Width = 31
+    Height = 13
+    Caption = 'Label4'
+  end
+  object Label6: TLabel
+    Left = 8
+    Top = 393
+    Width = 60
+    Height = 16
+    Caption = 'Recipiets :'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object RichEdit1: TRichEdit
+    Left = 8
+    Top = 82
+    Width = 601
+    Height = 158
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Lines.Strings = (
+      'RichEdit1')
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 63
+    Top = 53
+    Width = 129
+    Height = 25
+    Caption = 'Get Text from Textfile'
+    TabOrder = 1
+  end
+  object btnContinue: TButton
+    Left = 534
+    Top = 432
+    Width = 75
+    Height = 25
+    Caption = 'Continue'
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 453
+    Top = 432
+    Width = 75
+    Height = 25
+    Caption = 'Cancel'
+    TabOrder = 3
+  end
+  object btnBrowsBMP: TButton
+    Left = 534
+    Top = 334
+    Width = 75
+    Height = 25
+    Caption = 'Browse'
+    TabOrder = 4
+  end
+  object Edit1: TEdit
+    Left = 112
+    Top = 266
+    Width = 416
+    Height = 21
+    TabOrder = 5
+    Text = 'Edit1'
+  end
+  object Edit2: TEdit
+    Left = 112
+    Top = 334
+    Width = 416
+    Height = 21
+    TabOrder = 6
+    Text = 'Edit1'
+  end
+  object RadioGroup1: TRadioGroup
+    Left = 488
+    Top = 8
+    Width = 113
+    Height = 57
+    Caption = 'RadioGroup1'
+    Items.Strings = (
+      'Private'
+      'Public')
+    TabOrder = 7
+  end
+  object Edit3: TEdit
+    Left = 112
+    Top = 392
+    Width = 416
+    Height = 21
+    TabOrder = 8
+    Text = 'Edit3'
+  end
+end

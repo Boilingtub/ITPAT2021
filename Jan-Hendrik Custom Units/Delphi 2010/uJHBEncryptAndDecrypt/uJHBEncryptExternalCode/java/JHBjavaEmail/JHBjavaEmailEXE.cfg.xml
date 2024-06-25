@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>console</headerType>
+  <jar>C:\Jan-Hendrik ITPAT\ITPAT\Jan-Hendrik Custom Units\Delphi 2010\uJHBEncryptAndDecrypt\uJHBEncryptExternalCode\java\JHBjavaEmail\JHBjavaEmail-1.0.jar</jar>
+  <outfile>C:\Jan-Hendrik ITPAT\ITPAT\Jan-Hendrik Custom Units\Delphi 2010\uJHBEncryptAndDecrypt\uJHBEncryptExternalCode\java\JHBjavaEmail\JHBjavaEmail-1.0.exe</outfile>
+  <errTitle>Please install java</errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl>https://boilingtub.github.io/Jan-Hendrik/</supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Art Projects\Other\JHBJavaMAilIcon.ico</icon>
+  <classPath>
+    <mainClass>JHB.JHBjavaEmail</mainClass>
+  </classPath>
+  <jre>
+    <path>%JAVA_HOME%</path>
+    <bundledJre64Bit>true</bundledJre64Bit>
+    <bundledJreAsFallback>true</bundledJreAsFallback>
+    <minVersion>1.8.0</minVersion>
+    <maxVersion>1.9.0</maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>32/64</runtimeBits>
+  </jre>
+</launch4jConfig>
